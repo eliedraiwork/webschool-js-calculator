@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A Simple Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+
+
+    <div id="calculator" align="center">
+
+        <div>
+            <input id="screen" value="0"><br>
+        </div>
+
+        <div>
+            <button class="btn-calculator number" id="btn-1">1</button>
+            <button class="btn-calculator number" id="btn-2">2</button>
+            <button class="btn-calculator number" id="btn-3">3</button>
+            <button class="btn-calculator operator" id="btn-plus">+</button>
+        </div>
+
+        <div>
+            <button class="btn-calculator number" id="btn-4">4</button>
+            <button class="btn-calculator number" id="btn-5">5</button>
+            <button class="btn-calculator number" id="btn-6">6</button>
+            <button class="btn-calculator operator" id="btn-minus">-</button>
+        </div>
+
+        <div>
+            <button class="btn-calculator number" id="btn-7">7</button>
+            <button class="btn-calculator number" id="btn-8">8</button>
+            <button class="btn-calculator number" id="btn-9">9</button>
+            <button class="btn-calculator operator" id="btn-divide">/</button>
+        </div>
+
+        <div>
+            <button class="btn-calculator number" id="btn-0">0</button>
+            <button class="btn-calculator decimal" id="btn-point"
+                onclick="processDecimalButton(this.innerHTML)">.</button>
+            <button class="btn-calculator percentage" id="btn-percentage"
+                onclick="processPercentageButton(this.innerHTML)">%</button>
+            <button class="btn-calculator operator" id="btn-multiply">x</button>
+        </div>
+
+        <div>
+            <button class="btn-calculator number" id="btn-00">00</button>
+            <button class="btn-calculator parenthese" id="btn-parenthese_open">(</button>
+            <button class="btn-calculator parenthese" id="btn-parenthese_close">)</button>
+            <button class="btn-calculator operator" id="btn-power">^</button>
+        </div>
+
+        <div>
+            <button class="btn-calculator reset">C</button>
+            <button class="btn-calculator equal eval">=</button>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/simplecalculator.js"></script>
+
+</body>
+
+</html>
